@@ -64,7 +64,7 @@ agent.addDataSource(
 // });
 
 // Expose an HTTP endpoint.
-agent.mountOnStandaloneServer(Number(process.env.APPLICATION_PORT));
+agent.mountOnStandaloneServer(Number(process.env.PORT ?? process.env.APPLICATION_PORT));
 
 // Start the agent.
 agent.start().catch(error => {
