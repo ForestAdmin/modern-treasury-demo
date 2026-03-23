@@ -2298,7 +2298,60 @@
       "segments": []
     },
     {
-      "actions": [],
+      "actions": [
+        {
+          "id": "decisions-0-approve-kyc-decision",
+          "name": "Approve KYC Decision",
+          "type": "single",
+          "baseUrl": null,
+          "endpoint": "/forest/_actions/decisions/0/approve-kyc-decision",
+          "httpMethod": "POST",
+          "redirect": null,
+          "download": false,
+          "fields": [
+            {
+              "field": "Loading...",
+              "label": "Loading...",
+              "type": "String",
+              "isReadOnly": true,
+              "defaultValue": "Form is loading",
+              "description": "",
+              "enums": null,
+              "hook": null,
+              "isRequired": false,
+              "reference": null,
+              "widgetEdit": null
+            }
+          ],
+          "hooks": {"load": true, "change": ["changeHook"]}
+        },
+        {
+          "id": "decisions-1-reject-kyc-decision",
+          "name": "Reject KYC Decision",
+          "type": "single",
+          "baseUrl": null,
+          "endpoint": "/forest/_actions/decisions/1/reject-kyc-decision",
+          "httpMethod": "POST",
+          "redirect": null,
+          "download": false,
+          "fields": [
+            {
+              "field": "Loading...",
+              "label": "Loading...",
+              "type": "String",
+              "isReadOnly": true,
+              "defaultValue": "Form is loading",
+              "description": "",
+              "enums": null,
+              "hook": null,
+              "isRequired": false,
+              "reference": null,
+              "widgetEdit": null
+            }
+          ],
+          "hooks": {"load": true, "change": ["changeHook"]}
+        }
+      ],
       "fields": [
         {
           "defaultValue": null,
@@ -3485,7 +3538,86 @@
       "segments": []
     },
     {
-      "actions": [],
+      "actions": [
+        {
+          "id": "legal_entities-2-request-kyc-documents",
+          "name": "Request KYC Documents",
+          "type": "single",
+          "baseUrl": null,
+          "endpoint": "/forest/_actions/legal_entities/2/request-kyc-documents",
+          "httpMethod": "POST",
+          "redirect": null,
+          "download": false,
+          "fields": [
+            {
+              "field": "Loading...",
+              "label": "Loading...",
+              "type": "String",
+              "isReadOnly": true,
+              "defaultValue": "Form is loading",
+              "description": "",
+              "enums": null,
+              "hook": null,
+              "isRequired": false,
+              "reference": null,
+              "widgetEdit": null
+            }
+          ],
+          "hooks": {"load": true, "change": ["changeHook"]}
+        },
+        {
+          "id": "legal_entities-1-suspend-counterparty",
+          "name": "Suspend Counterparty",
+          "type": "single",
+          "baseUrl": null,
+          "endpoint": "/forest/_actions/legal_entities/1/suspend-counterparty",
+          "httpMethod": "POST",
+          "redirect": null,
+          "download": false,
+          "fields": [
+            {
+              "field": "Loading...",
+              "label": "Loading...",
+              "type": "String",
+              "isReadOnly": true,
+              "defaultValue": "Form is loading",
+              "description": "",
+              "enums": null,
+              "hook": null,
+              "isRequired": false,
+              "reference": null,
+              "widgetEdit": null
+            }
+          ],
+          "hooks": {"load": true, "change": ["changeHook"]}
+        },
+        {
+          "id": "legal_entities-0-update-risk-rating",
+          "name": "Update Risk Rating",
+          "type": "single",
+          "baseUrl": null,
+          "endpoint": "/forest/_actions/legal_entities/0/update-risk-rating",
+          "httpMethod": "POST",
+          "redirect": null,
+          "download": false,
+          "fields": [
+            {
+              "field": "Loading...",
+              "label": "Loading...",
+              "type": "String",
+              "isReadOnly": true,
+              "defaultValue": "Form is loading",
+              "description": "",
+              "enums": null,
+              "hook": null,
+              "isRequired": false,
+              "reference": null,
+              "widgetEdit": null
+            }
+          ],
+          "hooks": {"load": true, "change": ["changeHook"]}
+        }
+      ],
       "fields": [
         {
           "defaultValue": null,
@@ -5539,7 +5671,242 @@
       "segments": []
     },
     {
-      "actions": [],
+      "actions": [
+        {
+          "id": "transfers-6-add-review-note",
+          "name": "Add Review Note",
+          "type": "single",
+          "baseUrl": null,
+          "endpoint": "/forest/_actions/transfers/6/add-review-note",
+          "httpMethod": "POST",
+          "redirect": null,
+          "download": false,
+          "fields": [
+            {
+              "field": "Loading...",
+              "label": "Loading...",
+              "type": "String",
+              "isReadOnly": true,
+              "defaultValue": "Form is loading",
+              "description": "",
+              "enums": null,
+              "hook": null,
+              "isRequired": false,
+              "reference": null,
+              "widgetEdit": null
+            }
+          ],
+          "hooks": {"load": true, "change": ["changeHook"]}
+        },
+        {
+          "id": "transfers-4-approve-release",
+          "name": "Approve Release",
+          "type": "single",
+          "baseUrl": null,
+          "endpoint": "/forest/_actions/transfers/4/approve-release",
+          "httpMethod": "POST",
+          "redirect": null,
+          "download": false,
+          "fields": [
+            {
+              "field": "Loading...",
+              "label": "Loading...",
+              "type": "String",
+              "isReadOnly": true,
+              "defaultValue": "Form is loading",
+              "description": "",
+              "enums": null,
+              "hook": null,
+              "isRequired": false,
+              "reference": null,
+              "widgetEdit": null
+            }
+          ],
+          "hooks": {"load": true, "change": ["changeHook"]}
+        },
+        {
+          "id": "transfers-3-block-payment",
+          "name": "Block Payment",
+          "type": "single",
+          "baseUrl": null,
+          "endpoint": "/forest/_actions/transfers/3/block-payment",
+          "httpMethod": "POST",
+          "redirect": null,
+          "download": false,
+          "fields": [
+            {
+              "field": "Loading...",
+              "label": "Loading...",
+              "type": "String",
+              "isReadOnly": true,
+              "defaultValue": "Form is loading",
+              "description": "",
+              "enums": null,
+              "hook": null,
+              "isRequired": false,
+              "reference": null,
+              "widgetEdit": null
+            }
+          ],
+          "hooks": {"load": true, "change": ["changeHook"]}
+        },
+        {
+          "id": "transfers-2-escalate-to-compliance",
+          "name": "Escalate to Compliance",
+          "type": "single",
+          "baseUrl": null,
+          "endpoint": "/forest/_actions/transfers/2/escalate-to-compliance",
+          "httpMethod": "POST",
+          "redirect": null,
+          "download": false,
+          "fields": [
+            {
+              "field": "Loading...",
+              "label": "Loading...",
+              "type": "String",
+              "isReadOnly": true,
+              "defaultValue": "Form is loading",
+              "description": "",
+              "enums": null,
+              "hook": null,
+              "isRequired": false,
+              "reference": null,
+              "widgetEdit": null
+            }
+          ],
+          "hooks": {"load": true, "change": ["changeHook"]}
+        },
+        {
+          "id": "transfers-7-extend-hold",
+          "name": "Extend Hold",
+          "type": "bulk",
+          "baseUrl": null,
+          "endpoint": "/forest/_actions/transfers/7/extend-hold",
+          "httpMethod": "POST",
+          "redirect": null,
+          "download": false,
+          "fields": [
+            {
+              "field": "Loading...",
+              "label": "Loading...",
+              "type": "String",
+              "isReadOnly": true,
+              "defaultValue": "Form is loading",
+              "description": "",
+              "enums": null,
+              "hook": null,
+              "isRequired": false,
+              "reference": null,
+              "widgetEdit": null
+            }
+          ],
+          "hooks": {"load": true, "change": ["changeHook"]}
+        },
+        {
+          "id": "transfers-8-mark-as-false-positive",
+          "name": "Mark as False Positive",
+          "type": "bulk",
+          "baseUrl": null,
+          "endpoint": "/forest/_actions/transfers/8/mark-as-false-positive",
+          "httpMethod": "POST",
+          "redirect": null,
+          "download": false,
+          "fields": [
+            {
+              "field": "Loading...",
+              "label": "Loading...",
+              "type": "String",
+              "isReadOnly": true,
+              "defaultValue": "Form is loading",
+              "description": "",
+              "enums": null,
+              "hook": null,
+              "isRequired": false,
+              "reference": null,
+              "widgetEdit": null
+            }
+          ],
+          "hooks": {"load": true, "change": ["changeHook"]}
+        },
+        {
+          "id": "transfers-5-reject-release",
+          "name": "Reject Release",
+          "type": "single",
+          "baseUrl": null,
+          "endpoint": "/forest/_actions/transfers/5/reject-release",
+          "httpMethod": "POST",
+          "redirect": null,
+          "download": false,
+          "fields": [
+            {
+              "field": "Loading...",
+              "label": "Loading...",
+              "type": "String",
+              "isReadOnly": true,
+              "defaultValue": "Form is loading",
+              "description": "",
+              "enums": null,
+              "hook": null,
+              "isRequired": false,
+              "reference": null,
+              "widgetEdit": null
+            }
+          ],
+          "hooks": {"load": true, "change": ["changeHook"]}
+        },
+        {
+          "id": "transfers-1-release-payment",
+          "name": "Release Payment",
+          "type": "single",
+          "baseUrl": null,
+          "endpoint": "/forest/_actions/transfers/1/release-payment",
+          "httpMethod": "POST",
+          "redirect": null,
+          "download": false,
+          "fields": [
+            {
+              "field": "Loading...",
+              "label": "Loading...",
+              "type": "String",
+              "isReadOnly": true,
+              "defaultValue": "Form is loading",
+              "description": "",
+              "enums": null,
+              "hook": null,
+              "isRequired": false,
+              "reference": null,
+              "widgetEdit": null
+            }
+          ],
+          "hooks": {"load": true, "change": ["changeHook"]}
+        },
+        {
+          "id": "transfers-0-send-rfi",
+          "name": "Send RFI",
+          "type": "single",
+          "baseUrl": null,
+          "endpoint": "/forest/_actions/transfers/0/send-rfi",
+          "httpMethod": "POST",
+          "redirect": null,
+          "download": false,
+          "fields": [
+            {
+              "field": "Loading...",
+              "label": "Loading...",
+              "type": "String",
+              "isReadOnly": true,
+              "defaultValue": "Form is loading",
+              "description": "",
+              "enums": null,
+              "hook": null,
+              "isRequired": false,
+              "reference": null,
+              "widgetEdit": null
+            }
+          ],
+          "hooks": {"load": true, "change": ["changeHook"]}
+        }
+      ],
       "fields": [
         {
           "defaultValue": null,
@@ -6252,7 +6619,60 @@
       "segments": []
     },
     {
-      "actions": [],
+      "actions": [
+        {
+          "id": "verifications-0-approve-verification",
+          "name": "Approve Verification",
+          "type": "single",
+          "baseUrl": null,
+          "endpoint": "/forest/_actions/verifications/0/approve-verification",
+          "httpMethod": "POST",
+          "redirect": null,
+          "download": false,
+          "fields": [
+            {
+              "field": "Loading...",
+              "label": "Loading...",
+              "type": "String",
+              "isReadOnly": true,
+              "defaultValue": "Form is loading",
+              "description": "",
+              "enums": null,
+              "hook": null,
+              "isRequired": false,
+              "reference": null,
+              "widgetEdit": null
+            }
+          ],
+          "hooks": {"load": true, "change": ["changeHook"]}
+        },
+        {
+          "id": "verifications-1-reject-verification",
+          "name": "Reject Verification",
+          "type": "single",
+          "baseUrl": null,
+          "endpoint": "/forest/_actions/verifications/1/reject-verification",
+          "httpMethod": "POST",
+          "redirect": null,
+          "download": false,
+          "fields": [
+            {
+              "field": "Loading...",
+              "label": "Loading...",
+              "type": "String",
+              "isReadOnly": true,
+              "defaultValue": "Form is loading",
+              "description": "",
+              "enums": null,
+              "hook": null,
+              "isRequired": false,
+              "reference": null,
+              "widgetEdit": null
+            }
+          ],
+          "hooks": {"load": true, "change": ["changeHook"]}
+        }
+      ],
       "fields": [
         {
           "defaultValue": null,

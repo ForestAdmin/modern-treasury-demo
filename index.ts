@@ -4,6 +4,7 @@ import type { Schema } from './typings';
 import 'dotenv/config';
 import { createAgent } from '@forestadmin/agent';
 import { createSqlDataSource } from '@forestadmin/datasource-sql';
+import applyCustomizations from './customizations';
 
 // This object allows to configure your Forest Admin panel
 const agent = createAgent<Schema>({
@@ -28,6 +29,8 @@ agent.addDataSource(
     sslMode: process.env.DATABASE_SSL_MODE as SslMode,
   }),
 );
+
+applyCustomizations(agent);
 
 // Add customizations here.
 // For instance, you can code custom actions, charts, create new fields or relationships, load plugins.
