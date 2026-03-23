@@ -11,6 +11,12 @@ import addReviewNote from './actions/add-review-note';
 import extendHold from './actions/extend-hold';
 import markFalsePositive from './actions/mark-false-positive';
 
+import amountDisplay from './fields/amount-display';
+import daysHeld from './fields/days-held';
+import slaStatus from './fields/sla-status';
+import sardineRiskScore from './fields/sardine-risk-score';
+import sardineAlertReason from './fields/sardine-alert-reason';
+
 export default (agent: Agent<Schema>) => {
   agent.customizeCollection('transfers', collection => {
     sendRfi(collection);
@@ -22,5 +28,11 @@ export default (agent: Agent<Schema>) => {
     addReviewNote(collection);
     extendHold(collection);
     markFalsePositive(collection);
+
+    amountDisplay(collection);
+    daysHeld(collection);
+    slaStatus(collection);
+    sardineRiskScore(collection);
+    sardineAlertReason(collection);
   });
 };
