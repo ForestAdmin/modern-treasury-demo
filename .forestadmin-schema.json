@@ -3540,6 +3540,84 @@
     {
       "actions": [
         {
+          "id": "legal_entities-5-add-to-persona-blocklist",
+          "name": "Add to Persona Blocklist",
+          "type": "single",
+          "baseUrl": null,
+          "endpoint": "/forest/_actions/legal_entities/5/add-to-persona-blocklist",
+          "httpMethod": "POST",
+          "redirect": null,
+          "download": false,
+          "fields": [
+            {
+              "field": "Loading...",
+              "label": "Loading...",
+              "type": "String",
+              "isReadOnly": true,
+              "defaultValue": "Form is loading",
+              "description": "",
+              "enums": null,
+              "hook": null,
+              "isRequired": false,
+              "reference": null,
+              "widgetEdit": null
+            }
+          ],
+          "hooks": {"load": true, "change": ["changeHook"]}
+        },
+        {
+          "id": "legal_entities-3-approve-kyc",
+          "name": "Approve KYC",
+          "type": "single",
+          "baseUrl": null,
+          "endpoint": "/forest/_actions/legal_entities/3/approve-kyc",
+          "httpMethod": "POST",
+          "redirect": null,
+          "download": false,
+          "fields": [
+            {
+              "field": "Loading...",
+              "label": "Loading...",
+              "type": "String",
+              "isReadOnly": true,
+              "defaultValue": "Form is loading",
+              "description": "",
+              "enums": null,
+              "hook": null,
+              "isRequired": false,
+              "reference": null,
+              "widgetEdit": null
+            }
+          ],
+          "hooks": {"load": true, "change": ["changeHook"]}
+        },
+        {
+          "id": "legal_entities-4-decline-kyc",
+          "name": "Decline KYC",
+          "type": "single",
+          "baseUrl": null,
+          "endpoint": "/forest/_actions/legal_entities/4/decline-kyc",
+          "httpMethod": "POST",
+          "redirect": null,
+          "download": false,
+          "fields": [
+            {
+              "field": "Loading...",
+              "label": "Loading...",
+              "type": "String",
+              "isReadOnly": true,
+              "defaultValue": "Form is loading",
+              "description": "",
+              "enums": null,
+              "hook": null,
+              "isRequired": false,
+              "reference": null,
+              "widgetEdit": null
+            }
+          ],
+          "hooks": {"load": true, "change": ["changeHook"]}
+        },
+        {
           "id": "legal_entities-2-request-kyc-documents",
           "name": "Request KYC Documents",
           "type": "single",
@@ -3930,6 +4008,80 @@
           "isVirtual": false,
           "reference": null,
           "type": "Date",
+          "validations": []
+        },
+        {
+          "defaultValue": null,
+          "enums": [],
+          "field": "persona_inquiry_date",
+          "integration": null,
+          "inverseOf": null,
+          "isFilterable": false,
+          "isPrimaryKey": false,
+          "isReadOnly": true,
+          "isRequired": false,
+          "isSortable": false,
+          "isVirtual": false,
+          "reference": null,
+          "type": "Date",
+          "validations": []
+        },
+        {
+          "defaultValue": null,
+          "enums": [
+            "approved",
+            "completed",
+            "declined",
+            "expired",
+            "failed",
+            "needs_review",
+            "no_account",
+            "no_inquiry",
+            "pending"
+          ],
+          "field": "persona_kyc_status",
+          "integration": null,
+          "inverseOf": null,
+          "isFilterable": false,
+          "isPrimaryKey": false,
+          "isReadOnly": true,
+          "isRequired": false,
+          "isSortable": false,
+          "isVirtual": false,
+          "reference": null,
+          "type": "Enum",
+          "validations": []
+        },
+        {
+          "defaultValue": null,
+          "enums": [],
+          "field": "persona_verification_summary",
+          "integration": null,
+          "inverseOf": null,
+          "isFilterable": false,
+          "isPrimaryKey": false,
+          "isReadOnly": true,
+          "isRequired": false,
+          "isSortable": false,
+          "isVirtual": false,
+          "reference": null,
+          "type": "Json",
+          "validations": []
+        },
+        {
+          "defaultValue": null,
+          "enums": ["clear", "hit", "no_report", "pending"],
+          "field": "persona_watchlist_hit",
+          "integration": null,
+          "inverseOf": null,
+          "isFilterable": false,
+          "isPrimaryKey": false,
+          "isReadOnly": true,
+          "isRequired": false,
+          "isSortable": false,
+          "isVirtual": false,
+          "reference": null,
+          "type": "Enum",
           "validations": []
         },
         {
@@ -6996,6 +7148,6 @@
     "liana_version": "1.75.0",
     "liana_features": null,
     "ai_llms": null,
-    "stack": {"engine": "nodejs", "engine_version": "22.20.0"}
+    "stack": {"engine": "nodejs", "engine_version": "25.2.1"}
   }
 }
